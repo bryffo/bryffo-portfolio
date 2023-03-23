@@ -1,0 +1,181 @@
+/* fuentes---
+font-family: 'Lato', sans-serif;
+font-family: 'Roboto', sans-serif;
+---fuentes */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+}
+
+/* pongo la imagen en todo el html porque si la pongo en el main deja espacios en blanco cuando uso margin */
+html {
+    font-size: 62.5%;
+    background-image: url("https://images.unsplash.com/photo-1528460033278-a6ba57020470?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=735&q=80");
+    width: 100%;
+    height: 90rem;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+/*--- Navegacion ---*/
+header {
+    background-color: #000000;
+    font-size: 2rem;
+    letter-spacing: 5px;
+    position: static;
+    top: 0;
+
+}
+
+header a {
+    text-decoration: none;
+    color: #fff;
+}
+
+nav {
+    text-align: center;
+}
+
+.logo {
+    padding: 2rem;
+}
+
+.navbar li {
+    display: inline-block;
+    padding: 2rem;
+}
+
+/*--- Navegacion ---*/
+
+/*--- Main ---*/
+
+.index-div-1{
+    text-align: center;
+    height: 30rem;
+    padding: 10rem;
+}
+
+.index-div-2{
+    margin-left: 65rem;
+
+}
+h1 {
+    font-size: 5rem;
+    font-family: 'Lato', sans-serif;
+}
+
+.section-index p {
+    font-size: 2rem;
+    margin-bottom: 3rem;
+}
+
+
+.section-index a {
+    font-size: 2.5rem;
+    text-decoration: none;
+    color: #000000;
+    background-color: #fff;
+    margin: 15%;
+    padding: 0.5rem;
+    border: 0.1rem solid black;
+    border-radius: 30%;
+}
+
+.informacion h1 {
+    margin-left: 5rem;
+
+}
+
+.informacion p {
+    font-size: 2rem;
+    margin-left: 5rem;
+    margin-bottom: 1rem;
+}
+
+.informacion div {
+    margin-left: 5rem;
+}
+
+.paginas img {
+    border: 0.2rem solid black;
+    margin: 1rem;
+}
+
+.paginas h2 {
+    font-size: 3rem;
+    font-family: 'Lato', sans-serif;
+    padding: 1rem;
+}
+
+.paginas p {
+    font-size: 2rem;
+    padding-left: 1rem;
+}
+
+.comentario div {
+    background-color: #fff;
+    width: 50rem;
+    height: 30rem;
+    padding: 0.5rem;
+    margin: 3rem;
+    border: 0.3rem solid black;
+}
+
+.comentario p {
+    font-size: 2rem;
+}
+
+.contacto-info{
+    background-color: #537FE7;
+    width: 50rem;
+    height: 50rem;
+    padding: 2rem;
+    margin-top: 5rem;
+    margin-left: 15rem;
+    border: 0.3rem solid black;
+}
+
+.contacto-info p{
+    font-size: 2rem;
+    font-weight: bold;
+    margin-bottom: 4rem;
+}
+
+.formulario{
+    font-size: 2rem;
+}
+
+/*--- Main ---*/
+
+/*--- Footer ---*/
+footer {
+    background-color: #150050;
+    position: static;
+    bottom: 0;
+}
+
+.texto-footer {
+    font-size: 2.5rem;
+    margin-left: 2rem;
+}
+
+.texto-footer a {
+    text-decoration: none;
+    color: #fff;
+}
+
+.texto-footer p {
+
+    color: #fff;
+    font-size: 1.5rem;
+}
+
+.redes-sociales li {
+    display: inline-block;
+}
+
+/*--- Footer ---*/
