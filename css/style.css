@@ -10,6 +10,20 @@ font-family: 'Roboto', sans-serif;
     font-family: 'Roboto', sans-serif;
 }
 
+.grid-index{
+    display: grid;
+    width: 100%;
+    height: 100vh;
+    grid-template-columns: 1fr;
+    grid-template-rows: 10% 80% 10%;
+    grid-template-areas: 
+    "header"
+    "main"
+    "footer"
+    ;
+}
+
+
 /* pongo la imagen en todo el html porque si la pongo en el main deja espacios en blanco cuando uso margin */
 html {
     font-size: 62.5%;
@@ -23,12 +37,17 @@ html {
 
 /*--- Navegacion ---*/
 header {
+    grid-area: header;
     background-color: #000000;
     font-size: 2rem;
     letter-spacing: 5px;
-    position: static;
-    top: 0;
-
+}
+.container-header{
+    height: 100%;
+    width: 100%;
+    display: flex;
+    justify-content:space-between;
+    align-items: center;
 }
 
 header a {
@@ -38,20 +57,28 @@ header a {
 
 nav {
     text-align: center;
+    justify-self: center;
+
 }
 
 .logo {
+    justify-self: flex-start;
     padding: 2rem;
 }
 
-.navbar li {
-    display: inline-block;
-    padding: 2rem;
+.navbar{
+    display: flex;
+    column-gap: 5rem;
+    /* justify-content: center; */
+
 }
 
 /*--- Navegacion ---*/
 
 /*--- Main ---*/
+main{
+    grid-area: main;
+}
 
 .index-div-1{
     text-align: center;
@@ -153,11 +180,16 @@ h1 {
 
 /*--- Footer ---*/
 footer {
+    grid-area: footer;
     background-color: #150050;
-    position: static;
-    bottom: 0;
+    /* position: static;
+    bottom: 0; */
 }
 
+.container-header{
+    display: flex;
+
+}
 .texto-footer {
     font-size: 2.5rem;
     margin-left: 2rem;
@@ -174,8 +206,10 @@ footer {
     font-size: 1.5rem;
 }
 
-.redes-sociales li {
-    display: inline-block;
+.redes-sociales{
+    display: flex;
+    column-gap: 2rem;
+    margin-right: 5rem;
 }
 
 /*--- Footer ---*/
