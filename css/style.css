@@ -62,14 +62,12 @@ nav {
 }
 
 .logo {
-    justify-self: flex-start;
     padding: 2rem;
 }
 
 .navbar{
     display: flex;
     column-gap: 5rem;
-    /* justify-content: center; */
 
 }
 
@@ -80,37 +78,65 @@ main{
     grid-area: main;
 }
 
+.section-index{
+    height: 100%;
+    display: flex;
+    justify-content: space-around;
+}
+
+.color-titulo{
+    color: #537FE7;
+}
+
 .index-div-1{
+    padding-top: 7rem;
     text-align: center;
-    height: 30rem;
-    padding: 10rem;
+
 }
 
 .index-div-2{
-    margin-left: 65rem;
+    align-self: center;
+    padding: 5rem;
+} 
 
-}
 h1 {
-    font-size: 5rem;
+    font-size: 10rem;
     font-family: 'Lato', sans-serif;
 }
 
 .section-index p {
-    font-size: 2rem;
+    font-size: 4rem;
     margin-bottom: 3rem;
 }
 
+.container-btn{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 7rem;
+}
 
 .section-index a {
-    font-size: 2.5rem;
     text-decoration: none;
-    color: #000000;
-    background-color: #fff;
-    margin: 15%;
-    padding: 0.5rem;
-    border: 0.1rem solid black;
-    border-radius: 30%;
+    color: black;
 }
+
+.index-div-1 button{
+    border-radius: 2rem;
+    border: 0.1rem solid black;
+    font-size: 2.5rem;
+    font-weight: bold;
+    padding: 2rem;
+}
+
+.btn-azul{
+    background-color: #150050;
+}
+
+.btn-azul a{
+    color: #fff;
+}
+
 
 .informacion h1 {
     margin-left: 5rem;
