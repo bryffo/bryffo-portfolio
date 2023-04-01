@@ -10,16 +10,16 @@ font-family: 'Roboto', sans-serif;
     font-family: 'Roboto', sans-serif;
 }
 
-.grid-index{
+.grid-index {
     display: grid;
     width: 100%;
     height: 100vh;
     grid-template-columns: 1fr;
     grid-template-rows: 10% 80% 10%;
-    grid-template-areas: 
-    "header"
-    "main"
-    "footer"
+    grid-template-areas:
+        "header"
+        "main"
+        "footer"
     ;
 }
 
@@ -27,12 +27,8 @@ font-family: 'Roboto', sans-serif;
 /* pongo la imagen en todo el html porque si la pongo en el main deja espacios en blanco cuando uso margin */
 html {
     font-size: 62.5%;
-    background-image: url("https://images.unsplash.com/photo-1528460033278-a6ba57020470?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=735&q=80");
     width: 100%;
-    height: 90rem;
-    background-position: center;
-    background-size: cover;
-    background-repeat: no-repeat;
+    height: 100vh;
 }
 
 /*--- Navegacion ---*/
@@ -42,11 +38,12 @@ header {
     font-size: 2rem;
     letter-spacing: 5px;
 }
-.container-header{
+
+.container-header {
     height: 100%;
     width: 100%;
     display: flex;
-    justify-content:space-between;
+    justify-content: space-between;
     align-items: center;
 }
 
@@ -65,7 +62,7 @@ nav {
     padding: 2rem;
 }
 
-.navbar{
+.navbar {
     display: flex;
     column-gap: 5rem;
 
@@ -74,30 +71,34 @@ nav {
 /*--- Navegacion ---*/
 
 /*--- Main ---*/
-main{
+main {
     grid-area: main;
+    background-image: url("https://images.unsplash.com/photo-1528460033278-a6ba57020470?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=735&q=80");
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
 }
 
-.section-index{
+.section-index {
     height: 100%;
     display: flex;
     justify-content: space-around;
 }
 
-.color-titulo{
+.color-titulo {
     color: #537FE7;
 }
 
-.index-div-1{
+.index-div-1 {
     padding-top: 7rem;
     text-align: center;
 
 }
 
-.index-div-2{
+.index-div-2 {
     align-self: center;
     padding: 5rem;
-} 
+}
 
 h1 {
     font-size: 10rem;
@@ -109,7 +110,7 @@ h1 {
     margin-bottom: 3rem;
 }
 
-.container-btn{
+.container-btn {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -121,7 +122,7 @@ h1 {
     color: black;
 }
 
-.index-div-1 button{
+.index-div-1 button {
     border-radius: 2rem;
     border: 0.1rem solid black;
     font-size: 2.5rem;
@@ -129,28 +130,80 @@ h1 {
     padding: 2rem;
 }
 
-.btn-azul{
+.btn-azul {
     background-color: #150050;
 }
 
-.btn-azul a{
+.btn-azul a {
     color: #fff;
 }
 
+.informacion {
+    width: 100%;
+    height: 80vh;
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+    grid-template-rows: repeat(8, 1fr);
+}
 
 .informacion h1 {
-    margin-left: 5rem;
+    grid-column-start: 2;
+    grid-column-end: 8;
+    grid-row-start: 2;
+    grid-row-end: 3;
+    font-weight: bold;
 
 }
 
-.informacion p {
-    font-size: 2rem;
-    margin-left: 5rem;
-    margin-bottom: 1rem;
+.p-1 {
+
+    grid-column-start: 2;
+    grid-column-end: 8;
+    grid-row-start: 3;
+    grid-row-end: 4;
+    font-size: 5rem;
+    font-weight: bold;
 }
 
-.informacion div {
-    margin-left: 5rem;
+.p-2 {
+    grid-column-start: 2;
+    grid-column-end: 8;
+    grid-row-start: 5;
+    grid-row-end: 6;
+    font-size: 4rem;
+    font-weight: bold;
+}
+
+.p-3 {
+    grid-column-start: 2;
+    grid-column-end: 5;
+    grid-row-start: 6;
+    grid-row-end: 7;
+    font-size: 4rem;
+    font-weight: bold;
+}
+
+.redes-sociales-sm {
+    display: flex;
+    gap: 5rem;
+    grid-column-start: 2;
+    grid-column-end: 5;
+    grid-row-start: 7;
+    grid-row-end: 8;
+}
+
+.redes-sociales-sm img {
+    width: 10rem;
+    height: 10rem;
+}
+
+.img-sm {
+    grid-column-start: 8;
+    grid-column-end: 12;
+    grid-row-start: 2;
+    grid-row-end: 7;
+    justify-self: center;
+    align-self: center;
 }
 
 .paginas img {
@@ -182,7 +235,7 @@ h1 {
     font-size: 2rem;
 }
 
-.contacto-info{
+.contacto-info {
     background-color: #537FE7;
     width: 50rem;
     height: 50rem;
@@ -192,13 +245,13 @@ h1 {
     border: 0.3rem solid black;
 }
 
-.contacto-info p{
+.contacto-info p {
     font-size: 2rem;
     font-weight: bold;
     margin-bottom: 4rem;
 }
 
-.formulario{
+.formulario {
     font-size: 2rem;
 }
 
@@ -212,10 +265,11 @@ footer {
     bottom: 0; */
 }
 
-.container-header{
+.container-header {
     display: flex;
 
 }
+
 .texto-footer {
     font-size: 2.5rem;
     margin-left: 2rem;
@@ -232,7 +286,7 @@ footer {
     font-size: 1.5rem;
 }
 
-.redes-sociales{
+.redes-sociales {
     display: flex;
     column-gap: 2rem;
     margin-right: 5rem;
