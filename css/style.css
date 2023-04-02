@@ -276,7 +276,20 @@ h1 {
     font-size: 4rem;
 }
 
-.comentario div {
+#carouselExampleIndicators{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+}
+
+.container-comentario{
+    display: flex;
+    justify-content: center;
+
+}
+
+.comentario{
     background-color: #fff;
     width: 50rem;
     height: 30rem;
