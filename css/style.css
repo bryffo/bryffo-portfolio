@@ -24,7 +24,6 @@ font-family: 'Roboto', sans-serif;
 }
 
 
-/* pongo la imagen en todo el html porque si la pongo en el main deja espacios en blanco cuando uso margin */
 html {
     font-size: 62.5%;
     width: 100%;
@@ -206,20 +205,75 @@ h1 {
     align-self: center;
 }
 
+.paginas{
+    display: flex;
+    flex-direction: column;
+    overflow: auto;
+}
+.grid-pagina-1{
+    background-color: rgb(188, 188, 188, 0.3);
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+}
+
+.grid-pagina-1 h2{
+    grid-column-start: 2;
+    grid-column-end: 4;
+    grid-row-start: 1;
+    grid-row-end: 2;
+}
+.grid-pagina-1 p{
+    grid-column-start: 2;
+    grid-column-end: 7;
+    grid-row-start: 2;
+    grid-row-end: 3;
+}
+.grid-pagina-1 img{
+    grid-column-start: 8;
+    grid-column-end: 12;
+    grid-row-start: 1;
+    grid-row-end: 4;
+}
+
+.grid-pagina-2{
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+}
+
+.grid-pagina-2 h2{
+    grid-column-start: 7;
+    grid-column-end: 9;
+    grid-row-start: 1;
+    grid-row-end: 2;
+}
+.grid-pagina-2 p{
+    grid-column-start: 7;
+    grid-column-end: 12;
+    grid-row-start: 2;
+    grid-row-end: 3;
+}
+.grid-pagina-2 img{
+    grid-column-start: 2;
+    grid-column-end: 6;
+    grid-row-start: 1;
+    grid-row-end: 4;
+}
 .paginas img {
     border: 0.2rem solid black;
-    margin: 1rem;
+    justify-self: center;
+    align-self: center;
 }
 
 .paginas h2 {
-    font-size: 3rem;
+    font-size: 4rem;
     font-family: 'Lato', sans-serif;
-    padding: 1rem;
+    align-self: flex-end;
 }
 
 .paginas p {
-    font-size: 2rem;
-    padding-left: 1rem;
+    font-size: 4rem;
 }
 
 .comentario div {
@@ -261,8 +315,6 @@ h1 {
 footer {
     grid-area: footer;
     background-color: #150050;
-    /* position: static;
-    bottom: 0; */
 }
 
 .container-header {
