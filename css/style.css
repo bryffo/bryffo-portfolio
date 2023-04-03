@@ -447,6 +447,7 @@ footer {
     }
     
     .p-3 {
+        font-size: 2.5rem;
         grid-area: 5/2/6/12;
         align-self: center;
     }
