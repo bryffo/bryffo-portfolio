@@ -40,33 +40,16 @@ header {
     letter-spacing: 0.3rem;
 }
 
-.container-header {
-    height: 100%;
+.nav-wrapper{
     width: 100%;
+    margin: 0 auto;
+    padding: 1rem;
+}
+
+nav{
     display: flex;
+    flex-wrap: wrap;
     justify-content: space-between;
-    align-items: center;
-}
-
-header a {
-    text-decoration: none;
-    color: #fff;
-}
-
-nav {
-    text-align: center;
-    justify-self: center;
-
-}
-
-.logo {
-    padding: 2rem;
-}
-
-.navbar {
-    display: flex;
-    column-gap: 5rem;
-
 }
 
 /*--- Navegacion ---*/
