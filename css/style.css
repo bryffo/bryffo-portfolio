@@ -114,7 +114,7 @@ nav #toggle, nav label{
 /*--- Main ---*/
 main {
     grid-area: main;
-    background-image: url("https://images.unsplash.com/photo-1528460033278-a6ba57020470?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=735&q=80");
+    background-image: url("../assets/imgs/background.jpg.jpg");
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
@@ -145,13 +145,16 @@ main {
     height: 100%;
 }
 h1 {
+    color: white;
     font-size: 5rem;
     font-family: 'Lato', sans-serif;
 }
 
 .section-index p {
+    color: white;
     font-size: 3rem;
     margin-bottom: 3rem;
+    font-weight: bold;
 }
 
 .container-btn {
@@ -187,44 +190,34 @@ h1 {
     height: 80vh;
     display: grid;
     grid-template-columns: repeat(12, 1fr);
-    grid-template-rows: repeat(8, 1fr);
+    grid-template-rows: repeat(10, 1fr);
 }
 
 .informacion h1 {
-    grid-column-start: 2;
-    grid-column-end: 8;
-    grid-row-start: 2;
-    grid-row-end: 3;
+    color: white;
+    grid-area: 2/2/3/8;
     font-weight: bold;
 
 }
 
 .p-1 {
-
-    grid-column-start: 2;
-    grid-column-end: 8;
-    grid-row-start: 3;
-    grid-row-end: 5;
+    color: white;
+    grid-area: 3/2/5/8;
     font-size: 3rem;
     font-weight: bold;
 }
 
 .p-2 {
-    grid-column-start: 2;
-    grid-column-end: 8;
-    grid-row-start: 5;
-    grid-row-end: 7;
-    font-size: 2rem;
+    color: white;
+    grid-area: 5/2/7/8;
+    font-size: 3rem;
     font-weight: bold;
-    align-self: center;
 }
 
 .p-3 {
-    grid-column-start: 2;
-    grid-column-end: 5;
-    grid-row-start: 6;
-    grid-row-end: 7;
-    font-size: 2rem;
+    color: white;
+    grid-area: 7/2/8/8;
+    font-size: 3rem;
     font-weight: bold;
     align-self: flex-end;
 }
@@ -232,10 +225,7 @@ h1 {
 .redes-sociales-sm {
     display: flex;
     gap: 3rem;
-    grid-column-start: 2;
-    grid-column-end: 5;
-    grid-row-start: 7;
-    grid-row-end: 8;
+    grid-area: 8/2/9/7;
     align-self: flex-end;
 
 }
@@ -246,10 +236,7 @@ h1 {
 }
 
 .img-sm {
-    grid-column-start: 8;
-    grid-column-end: 12;
-    grid-row-start: 2;
-    grid-row-end: 7;
+    grid-area: 3/8/8/12;
     justify-self: center;
     align-self: center;
 }
@@ -272,7 +259,7 @@ h1 {
 }
 
 .grid-pagina-1{
-    background-color: rgb(188, 188, 188, 0.3);
+    background-color: rgba(255, 255, 255, 0.15);
     display: grid;
     grid-template-columns: repeat(12, auto);
     grid-template-rows: repeat(3, auto);
@@ -299,6 +286,7 @@ h1 {
 }
 
 .grid-pagina-2{
+    background-color: rgba(191, 179, 179, 0.3);
     display: grid;
     grid-template-columns: repeat(12, auto);
     grid-template-rows: repeat(3, auto);
@@ -337,7 +325,8 @@ h1 {
 }
 
 .paginas p {
-    font-size: 2.5rem;
+    font-weight:bold;
+    font-size: 2rem;
 }
 
 
@@ -422,6 +411,13 @@ footer {
         gap: 5rem;
     }
 
+
+
+
+
+
+
+
 }
 
 @media (max-width:768px){
@@ -433,6 +429,44 @@ footer {
         width: 90%;
         height: 90%;
     }
+
+    .informacion h1 {
+        grid-area: 2/2/3/12;
+        text-align: center;    
+    }
+    
+    .p-1 {
+        grid-area: 3/2/4/12;
+        text-align: center;
+    }
+    
+    .p-2 {
+        grid-area: 4/2/5/12;
+        text-align: center;
+
+    }
+    
+    .p-3 {
+        grid-area: 5/2/6/12;
+        align-self: center;
+    }
+    
+    .redes-sociales-sm {
+        grid-area: 6/2/7/6;
+    }
+    
+    .redes-sociales-sm img {
+        width: 5rem;
+        height: 5rem;
+    }
+    
+    .img-sm {
+        grid-area: 5/8/9/12;
+        justify-self: center;
+        align-self: center;
+    }
+
+
 }
 
 
@@ -456,6 +490,29 @@ footer {
     }
     .container-btn {
         gap: 3rem;
+    }
+
+
+    .img-sm {
+        display: none;
+    }
+    .informacion h1 {
+        font-size: 3rem; 
+    }
+    .p-1{
+        font-size: 2rem;
+    }
+    .p-2{
+        font-size: 2rem;
+    }
+    .p-3 {
+        grid-area: 7/2/8/12;
+        align-self: center;
+        text-align: center;
+    }
+    .redes-sociales-sm {
+        grid-area: 8/2/9/12;
+        justify-self: center;
     }
 }
 
