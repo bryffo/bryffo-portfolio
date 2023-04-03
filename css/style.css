@@ -10,6 +10,12 @@ font-family: 'Roboto', sans-serif;
     font-family: 'Roboto', sans-serif;
 }
 
+html {
+    font-size: 62.5%;
+    width: 100%;
+    height: 100vh;
+}
+
 .grid-index {
     display: grid;
     width: 100%;
@@ -24,18 +30,14 @@ font-family: 'Roboto', sans-serif;
 }
 
 
-html {
-    font-size: 62.5%;
-    width: 100%;
-    height: 100vh;
-}
+
 
 /*--- Navegacion ---*/
 header {
     grid-area: header;
     background-color: #000000;
-    font-size: 2rem;
-    letter-spacing: 5px;
+    font-size: 1.5rem;
+    letter-spacing: 0.3rem;
 }
 
 .container-header {
@@ -89,8 +91,8 @@ main {
 }
 
 .index-div-1 {
-    padding-top: 7rem;
     text-align: center;
+    align-self: center;
 
 }
 
@@ -98,14 +100,17 @@ main {
     align-self: center;
     padding: 5rem;
 }
-
+.index-div-2 img{
+    width: 100%;
+    height: 100%;
+}
 h1 {
-    font-size: 10rem;
+    font-size: 5rem;
     font-family: 'Lato', sans-serif;
 }
 
 .section-index p {
-    font-size: 4rem;
+    font-size: 3rem;
     margin-bottom: 3rem;
 }
 
@@ -380,3 +385,24 @@ footer {
 }
 
 /*--- Footer ---*/
+
+
+@media (max-width:1024px){
+    .section-index{
+        flex-direction: column-reverse;
+    }
+    .index-div-2 img{
+        width: 90%;
+        height: 90%;
+    }
+    .section-index p {
+        font-size: 2.5rem;
+    }
+    /*---------- PROVICIONAL --------*/
+    header {
+        font-size: 1rem;
+        letter-spacing: 0.3rem;
+    }
+    /*---------- PROVICIONAL --------*/
+
+}
