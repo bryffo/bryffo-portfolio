@@ -1,0 +1,72 @@
+main {
+    grid-area: main;
+    background-image: url("../assets/imgs/background.jpg.jpg");
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.section-index {
+    height: 100%;
+    display: flex;
+    justify-content: space-around;
+}
+
+.color-titulo {
+    color: #537FE7;
+}
+
+.index-div-1 {
+    text-align: center;
+    align-self: center;
+
+}
+
+.index-div-2 {
+    align-self: center;
+    padding: 5rem;
+}
+.index-div-2 img{
+    width: 100%;
+    height: 100%;
+}
+h1 {
+    color: white;
+    font-size: 5rem;
+    font-family: 'Lato', sans-serif;
+}
+
+.section-index p {
+    color: white;
+    font-size: 3rem;
+    margin-bottom: 3rem;
+    font-weight: bold;
+}
+
+.container-btn {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 7rem;
+}
+
+.section-index a {
+    text-decoration: none;
+    color: black;
+}
+
+.index-div-1 button {
+    border-radius: 2rem;
+    border: 0.1rem solid black;
+    font-size: 2.5rem;
+    font-weight: bold;
+    padding: 2rem;
+}
+
+.btn-azul {
+    background-color: #150050;
+}
+
+.btn-azul a {
+    color: #fff;
+}

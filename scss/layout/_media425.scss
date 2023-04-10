@@ -1,0 +1,45 @@
+@media (max-width:425px){
+    .logo a {
+        font-size: 2rem;
+    }
+    .section-index {
+        justify-content: center;
+    }
+    .index-div-1 button {
+        font-size: 1.5rem;
+        font-weight: bold;
+        padding: 2rem;
+    }
+    .section-index h1{
+        font-size: 4rem;
+    }
+    .section-index p{
+        font-size: 2rem;
+    }
+    .container-btn {
+        gap: 3rem;
+    }
+
+
+    .img-sm {
+        display: none;
+    }
+    .informacion h1 {
+        font-size: 3rem; 
+    }
+    .p-1{
+        font-size: 2rem;
+    }
+    .p-2{
+        font-size: 2rem;
+    }
+    .p-3 {
+        grid-area: 7/2/8/12;
+        align-self: center;
+        text-align: center;
+    }
+    .redes-sociales-sm {
+        grid-area: 8/2/9/12;
+        justify-self: center;
+    }
+}

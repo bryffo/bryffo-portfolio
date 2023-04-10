@@ -1,0 +1,11 @@
+{
+  "name": "bryffo-portfolio",
+  "version": "1.0.0",
+  "description": "El proyecto apunta a ser un portfolio profesional que pueda ser usado como tal al finalizar el curso",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC"
+}

@@ -1,0 +1,15 @@
+@media (max-width:1024px){
+    .section-index{
+        flex-direction: column-reverse;
+    }
+    .index-div-2 img{
+        width: 100%;
+        height: 100%;
+    }
+    .section-index p {
+        font-size: 2.5rem;
+    }
+    .container-btn {
+        gap: 5rem;
+    }
+}

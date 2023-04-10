@@ -1,0 +1,21 @@
+.comentario{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    background-color: #537FE7;
+    width: 50%;
+    height: 25rem;
+    padding: 0.5rem;
+    margin: 3rem;
+    border: 0.1rem solid black;
+    box-shadow: 1rem 1rem 1rem grey;
+}
+.comentario img{
+    max-width: 10rem;;
+}
+
+.comentario p {
+    font-size: 2rem;
+    font-weight: bold;
+
+}
