@@ -226,7 +226,7 @@ main {
 }
 
 .paginas {
-  height: 100vh;
+  height: 100%;
   display: flex;
   flex-direction: column;
   flex-wrap: none;
@@ -424,14 +424,6 @@ button {
   text-decoration: none;
 }
 
-@media (min-width: 320px) {
-  .grid-pagina-1 img {
-    width: 30rem;
-  }
-  .grid-pagina-2 img {
-    width: 30rem;
-  }
-}
 @media (min-width: 425px) {
   .nav-wrapper nav .logo a {
     font-size: 3rem;
@@ -514,7 +506,7 @@ button {
     text-decoration: none;
   }
   .grid-pagina-1 img {
-    width: 35rem;
+    width: 30rem;
   }
   .grid-pagina-2 h2 {
     font-size: 2.5rem;
@@ -531,7 +523,7 @@ button {
     text-decoration: none;
   }
   .grid-pagina-2 img {
-    width: 35rem;
+    width: 30rem;
   }
   footer div .texto-footer a {
     font-size: 2.5rem;
