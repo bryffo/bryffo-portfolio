@@ -8,6 +8,7 @@
             }
         }
     }
+
     .section-index{
         .index-div-1{
             p{
@@ -22,6 +23,43 @@
             }
         }
     }
+
+    section{
+        h1{
+            font-size: 4rem;
+            text-align: start;
+            @include grid-order(2,2,3,12);
+        }
+        .p-1{
+            @include grid-order(3,2,4,12);
+            font-size: 2.5rem;
+            text-align: start;
+        }
+        .p-2{
+            @include grid-order(4,2,5,12);
+            font-size: 2.5rem;
+            text-align: start;
+        }
+        .p-3{
+            @include grid-order(5,2,6,12);
+            font-size: 2.5rem;
+            text-align: start;
+            justify-self: start;
+        }
+    }
+
+    .redes-sociales-sm{
+        align-self: flex-end;
+        justify-self: start;
+        @include grid-order(6,2,7,12);
+        a{
+            img{
+                width: 5rem;
+                height: 5rem;
+            }
+        }
+    }
+
 
     footer{
         div{

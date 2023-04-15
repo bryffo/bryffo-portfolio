@@ -18,6 +18,40 @@
     }
 
 
+    section{
+        h1{
+            @include grid-order(2,2,3,8);
+            font-size: 5rem;
+        }
+        .p-1{
+            @include grid-order(3,2,5,8);
+            font-size: 3rem;
+        }
+        .p-2{
+            @include grid-order(5,2,7,8);
+            font-size: 3rem;
+        }
+        .p-3{
+            @include grid-order(7,2,8,8);
+            font-size: 3rem;
+        }
+    }
+
+    .redes-sociales-sm{
+        @include grid-order(8,2,9,7);
+        a{
+            img{
+                width: 7rem;
+                height: 7rem;
+            }
+        }
+    }
+
+    .img-sm{
+        display:grid;
+        @include grid-order(3,8,8,12);
+    }
+
     .redes-sociales{
         li{
             a{

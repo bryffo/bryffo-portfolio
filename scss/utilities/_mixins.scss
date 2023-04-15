@@ -15,5 +15,8 @@
 }
 
 @mixin grid-order($rs,$cs,$re,$ce){
-    grid-area: $rs/$cs/$re/$ce;
+    grid-row-start: $rs;
+    grid-column-start: $cs;
+    grid-row-end: $re;
+    grid-column-end: $ce;
 }
