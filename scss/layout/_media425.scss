@@ -24,34 +24,32 @@
         }
     }
 
-    section{
+    .informacion{
         h1{
-            font-size: 4rem;
-            text-align: start;
+            @include text(4rem,bold,#fff,start,none);
             @include grid-order(2,2,3,12);
         }
         .p-1{
+            @include text(2.5rem,bold,#fff,start,none);
             @include grid-order(3,2,4,12);
-            font-size: 2.5rem;
-            text-align: start;
         }
         .p-2{
+            @include text(2.5rem,bold,#fff,start,none);
             @include grid-order(4,2,5,12);
-            font-size: 2.5rem;
-            text-align: start;
+
         }
         .p-3{
-            @include grid-order(5,2,6,12);
-            font-size: 2.5rem;
-            text-align: start;
+            @include text(2.5rem,bold,#fff,start,none);
+            @include grid-order(6,2,7,12);
             justify-self: start;
+
         }
     }
 
     .redes-sociales-sm{
         align-self: flex-end;
         justify-self: start;
-        @include grid-order(6,2,7,12);
+        @include grid-order(7,2,9,12);
         a{
             img{
                 width: 5rem;
@@ -62,10 +60,10 @@
 
     .grid-pagina-1{
         h2{
-            @include text(2.5rem,bold,#fff,center);
+            @include text(2.5rem,bold,#fff,center,none);
         }
         p{
-            @include text(2rem,bold,#fff,center);
+            @include text(2rem,bold,#fff,center,none);
         }
         img{
             width: 35rem;
@@ -74,10 +72,10 @@
     
     .grid-pagina-2{
         h2{
-            @include text(2.5rem,bold,#fff,center);
+            @include text(2.5rem,bold,#fff,center,none);
         }
         p{
-            @include text(2rem,bold,#fff,center);
+            @include text(2rem,bold,#fff,center,none);
         }
         img{
             width: 35rem;
@@ -88,10 +86,10 @@
         div{
             .texto-footer{
                 a{
-                    font-size: 2.5rem;
+                    @include text(2.5rem,none,#fff,none,none);
                 }
                 p{
-                    font-size: 1.5rem;
+                    @include text(1.5rem,none,#fff,none,none);
                 }
             }
         }

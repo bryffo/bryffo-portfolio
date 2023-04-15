@@ -1,0 +1,20 @@
+@media (min-width:1440px) {
+
+    .informacion {
+        h1 {
+            @include text(5rem,none,none,none,none);
+        }
+
+        .p-1 {
+            @include text(4rem,none,none,none,none);
+        }
+
+        .p-2 {
+            @include text(4rem,none,none,none,none);
+        }
+
+        .p-3 {
+            @include text(4rem,none,none,none,none);
+        }
+    }
+}

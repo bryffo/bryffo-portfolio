@@ -17,17 +17,12 @@ main{
         span{
             color: #537FE7;
         }
-        text-align: center;
-        color: white;
-        font-size: 3rem;
+        @include text(3rem,none,#fff,center,none);
         font-family: 'Lato', sans-serif;
     }
     p{
-        color: white;
-        font-size: 1.5rem;
+        @include text(1.5rem,bold,#fff,center,none);
         margin-bottom: 3rem;
-        font-weight: bold;
-        text-align: center;
     }
 }
 

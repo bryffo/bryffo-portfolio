@@ -41,9 +41,11 @@ html {
   border-radius: 0.4rem;
 }
 .nav-wrapper nav .logo a {
-  text-decoration: none;
-  color: white;
   font-size: 2rem;
+  font-weight: none;
+  color: #fff;
+  text-align: none;
+  text-decoration: none;
 }
 
 .menu ul {
@@ -52,9 +54,11 @@ html {
   gap: 2rem;
 }
 .menu ul li a {
-  text-decoration: none;
   font-size: 2rem;
-  color: white;
+  font-weight: none;
+  color: #fff;
+  text-align: none;
+  text-decoration: none;
 }
 
 nav #toggle, nav label {
@@ -102,20 +106,23 @@ main {
   align-self: center;
 }
 .index-div-1 h1 {
-  text-align: center;
-  color: white;
   font-size: 3rem;
+  font-weight: none;
+  color: #fff;
+  text-align: center;
+  text-decoration: none;
   font-family: "Lato", sans-serif;
 }
 .index-div-1 h1 span {
   color: #537FE7;
 }
 .index-div-1 p {
-  color: white;
   font-size: 1.5rem;
-  margin-bottom: 3rem;
   font-weight: bold;
+  color: #fff;
   text-align: center;
+  text-decoration: none;
+  margin-bottom: 3rem;
 }
 
 .index-div-2 {
@@ -127,7 +134,7 @@ main {
   height: 100%;
 }
 
-section {
+.informacion {
   width: 100%;
   height: 80vh;
   display: grid;
@@ -136,48 +143,52 @@ section {
   justify-content: none;
   align-items: none;
 }
-section h1 {
+.informacion h1 {
   font-size: 3rem;
-  color: white;
   font-weight: bold;
+  color: #fff;
+  text-align: center;
+  text-decoration: none;
   grid-row-start: 2;
   grid-column-start: 2;
   grid-row-end: 3;
   grid-column-end: 12;
-  text-align: center;
 }
-section h1 span {
+.informacion h1 span {
   color: #537FE7;
 }
-section .p-1 {
-  color: white;
+.informacion .p-1 {
+  font-size: 2rem;
+  font-weight: bold;
+  color: #fff;
+  text-align: center;
+  text-decoration: none;
   grid-row-start: 3;
   grid-column-start: 2;
   grid-row-end: 4;
   grid-column-end: 12;
+}
+.informacion .p-2 {
   font-size: 2rem;
   font-weight: bold;
+  color: #fff;
   text-align: center;
-}
-section .p-2 {
-  color: white;
+  text-decoration: none;
   grid-row-start: 4;
   grid-column-start: 2;
   grid-row-end: 5;
   grid-column-end: 12;
-  font-size: 2rem;
-  font-weight: bold;
-  text-align: center;
 }
-section .p-3 {
-  color: white;
+.informacion .p-3 {
+  font-size: 2.5rem;
+  font-weight: bold;
+  color: #fff;
+  text-align: center;
+  text-decoration: none;
   grid-row-start: 7;
   grid-column-start: 2;
   grid-row-end: 8;
   grid-column-end: 12;
-  font-size: 2.5rem;
-  font-weight: bold;
-  justify-self: center;
   align-self: center;
 }
 
@@ -240,6 +251,7 @@ section .p-3 {
   font-weight: bold;
   color: #fff;
   text-align: center;
+  text-decoration: none;
 }
 .grid-pagina-1 p {
   grid-row-start: 2;
@@ -250,6 +262,7 @@ section .p-3 {
   font-weight: bold;
   color: #fff;
   text-align: center;
+  text-decoration: none;
 }
 .grid-pagina-1 img {
   grid-row-start: 3;
@@ -277,6 +290,7 @@ section .p-3 {
   font-weight: bold;
   color: #fff;
   text-align: center;
+  text-decoration: none;
 }
 .grid-pagina-2 p {
   grid-row-start: 2;
@@ -287,6 +301,7 @@ section .p-3 {
   font-weight: bold;
   color: #fff;
   text-align: center;
+  text-decoration: none;
 }
 .grid-pagina-2 img {
   grid-row-start: 3;
@@ -319,6 +334,7 @@ section .p-3 {
   font-weight: bold;
   color: none;
   text-align: none;
+  text-decoration: none;
 }
 
 .col-md-5 {
@@ -347,13 +363,18 @@ footer div .texto-footer {
   align-items: none;
 }
 footer div .texto-footer a {
-  text-decoration: none;
-  color: #fff;
   font-size: 2rem;
+  font-weight: none;
+  color: #fff;
+  text-align: none;
+  text-decoration: none;
 }
 footer div .texto-footer p {
-  color: #fff;
   font-size: 1rem;
+  font-weight: none;
+  color: #fff;
+  text-align: none;
+  text-decoration: none;
 }
 
 .redes-sociales {
@@ -381,31 +402,29 @@ footer div .texto-footer p {
 button {
   border-radius: 2rem;
   border: 0.1rem solid black;
-  font-size: 1.5rem;
-  font-weight: bold;
   padding: 2rem;
 }
 
 .btn-blanco a {
-  text-decoration: none;
+  font-size: 1.5rem;
+  font-weight: bold;
   color: black;
+  text-align: none;
+  text-decoration: none;
 }
 
 .btn-azul {
   background-color: #150050;
 }
 .btn-azul a {
-  text-decoration: none;
+  font-size: 1.5rem;
+  font-weight: bold;
   color: #fff;
+  text-align: none;
+  text-decoration: none;
 }
 
 @media (min-width: 320px) {
-  .section-index h1 {
-    font-size: 3rem;
-  }
-  .section-index p {
-    font-size: 1.5rem;
-  }
   .grid-pagina-1 img {
     width: 30rem;
   }
@@ -423,45 +442,57 @@ button {
   .container-btn button a {
     font-size: 2rem;
   }
-  section h1 {
+  .informacion h1 {
     font-size: 4rem;
+    font-weight: bold;
+    color: #fff;
     text-align: start;
+    text-decoration: none;
     grid-row-start: 2;
     grid-column-start: 2;
     grid-row-end: 3;
     grid-column-end: 12;
   }
-  section .p-1 {
+  .informacion .p-1 {
+    font-size: 2.5rem;
+    font-weight: bold;
+    color: #fff;
+    text-align: start;
+    text-decoration: none;
     grid-row-start: 3;
     grid-column-start: 2;
     grid-row-end: 4;
     grid-column-end: 12;
-    font-size: 2.5rem;
-    text-align: start;
   }
-  section .p-2 {
+  .informacion .p-2 {
+    font-size: 2.5rem;
+    font-weight: bold;
+    color: #fff;
+    text-align: start;
+    text-decoration: none;
     grid-row-start: 4;
     grid-column-start: 2;
     grid-row-end: 5;
     grid-column-end: 12;
-    font-size: 2.5rem;
-    text-align: start;
   }
-  section .p-3 {
-    grid-row-start: 5;
-    grid-column-start: 2;
-    grid-row-end: 6;
-    grid-column-end: 12;
+  .informacion .p-3 {
     font-size: 2.5rem;
+    font-weight: bold;
+    color: #fff;
     text-align: start;
+    text-decoration: none;
+    grid-row-start: 6;
+    grid-column-start: 2;
+    grid-row-end: 7;
+    grid-column-end: 12;
     justify-self: start;
   }
   .redes-sociales-sm {
     align-self: flex-end;
     justify-self: start;
-    grid-row-start: 6;
+    grid-row-start: 7;
     grid-column-start: 2;
-    grid-row-end: 7;
+    grid-row-end: 9;
     grid-column-end: 12;
   }
   .redes-sociales-sm a img {
@@ -473,12 +504,14 @@ button {
     font-weight: bold;
     color: #fff;
     text-align: center;
+    text-decoration: none;
   }
   .grid-pagina-1 p {
     font-size: 2rem;
     font-weight: bold;
     color: #fff;
     text-align: center;
+    text-decoration: none;
   }
   .grid-pagina-1 img {
     width: 35rem;
@@ -488,66 +521,85 @@ button {
     font-weight: bold;
     color: #fff;
     text-align: center;
+    text-decoration: none;
   }
   .grid-pagina-2 p {
     font-size: 2rem;
     font-weight: bold;
     color: #fff;
     text-align: center;
+    text-decoration: none;
   }
   .grid-pagina-2 img {
     width: 35rem;
   }
   footer div .texto-footer a {
     font-size: 2.5rem;
+    font-weight: none;
+    color: #fff;
+    text-align: none;
+    text-decoration: none;
   }
   footer div .texto-footer p {
     font-size: 1.5rem;
+    font-weight: none;
+    color: #fff;
+    text-align: none;
+    text-decoration: none;
   }
 }
 @media (min-width: 768px) {
   .section-index .index-div-1 h1 {
     font-size: 5rem;
+    font-weight: none;
+    color: #fff;
+    text-align: center;
+    text-decoration: none;
   }
   .section-index .index-div-1 p {
     font-size: 2.5rem;
+    font-weight: none;
+    color: #fff;
+    text-align: center;
+    text-decoration: none;
   }
   .container-btn button a {
     font-size: 2rem;
+    font-weight: none;
+    color: none;
+    text-align: none;
+    text-decoration: none;
   }
-  section h1 {
+  .informacion h1 {
     grid-row-start: 2;
     grid-column-start: 2;
     grid-row-end: 3;
     grid-column-end: 8;
-    font-size: 5rem;
   }
-  section .p-1 {
+  .informacion .p-1 {
     grid-row-start: 3;
     grid-column-start: 2;
     grid-row-end: 5;
     grid-column-end: 8;
-    font-size: 3rem;
   }
-  section .p-2 {
-    grid-row-start: 5;
-    grid-column-start: 2;
-    grid-row-end: 7;
-    grid-column-end: 8;
-    font-size: 3rem;
-  }
-  section .p-3 {
-    grid-row-start: 7;
+  .informacion .p-2 {
+    grid-row-start: 6;
     grid-column-start: 2;
     grid-row-end: 8;
     grid-column-end: 8;
-    font-size: 3rem;
   }
-  .redes-sociales-sm {
+  .informacion .p-3 {
     grid-row-start: 8;
     grid-column-start: 2;
     grid-row-end: 9;
+    grid-column-end: 8;
+  }
+  .redes-sociales-sm {
+    grid-row-start: 9;
+    grid-column-start: 2;
+    grid-row-end: 11;
     grid-column-end: 7;
+    align-self: center;
   }
   .redes-sociales-sm a img {
     width: 7rem;
@@ -569,6 +621,7 @@ button {
     font-weight: bold;
     color: #fff;
     text-align: center;
+    text-decoration: none;
     justify-self: center;
     align-self: flex-end;
   }
@@ -581,6 +634,7 @@ button {
     font-weight: bold;
     color: #fff;
     text-align: start;
+    text-decoration: none;
     margin-right: 1rem;
   }
   .grid-pagina-1 img {
@@ -601,6 +655,7 @@ button {
     font-weight: bold;
     color: #fff;
     text-align: center;
+    text-decoration: none;
     align-self: flex-end;
   }
   .grid-pagina-2 p {
@@ -612,6 +667,7 @@ button {
     font-weight: bold;
     color: #fff;
     text-align: start;
+    text-decoration: none;
     margin-left: 1rem;
   }
   .grid-pagina-2 img {
@@ -628,6 +684,7 @@ button {
     font-weight: bold;
     color: none;
     text-align: none;
+    text-decoration: none;
   }
   .redes-sociales li a img {
     width: 100%;
@@ -643,30 +700,65 @@ button {
     font-weight: bold;
     color: #fff;
     text-align: center;
+    text-decoration: none;
   }
   .grid-pagina-1 p {
     font-size: 2.5rem;
     font-weight: bold;
     color: #fff;
     text-align: start;
+    text-decoration: none;
   }
   .grid-pagina-2 h2 {
     font-size: 4rem;
     font-weight: bold;
     color: #fff;
     text-align: center;
+    text-decoration: none;
   }
   .grid-pagina-2 p {
     font-size: 2.5rem;
     font-weight: bold;
     color: #fff;
     text-align: start;
+    text-decoration: none;
   }
   .comentario p {
     font-size: 2.5rem;
     font-weight: bold;
     color: none;
     text-align: none;
+    text-decoration: none;
+  }
+}
+@media (min-width: 1440px) {
+  .informacion h1 {
+    font-size: 5rem;
+    font-weight: none;
+    color: none;
+    text-align: none;
+    text-decoration: none;
+  }
+  .informacion .p-1 {
+    font-size: 4rem;
+    font-weight: none;
+    color: none;
+    text-align: none;
+    text-decoration: none;
+  }
+  .informacion .p-2 {
+    font-size: 4rem;
+    font-weight: none;
+    color: none;
+    text-align: none;
+    text-decoration: none;
+  }
+  .informacion .p-3 {
+    font-size: 4rem;
+    font-weight: none;
+    color: none;
+    text-align: none;
+    text-decoration: none;
   }
 }
 

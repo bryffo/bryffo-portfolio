@@ -21,9 +21,10 @@
     grid-column-end: $ce;
 }
 
-@mixin text($fs,$fw,$c,$ta){
+@mixin text($fs,$fw,$c,$ta,$tc){
     font-size:$fs ;
     font-weight:$fw ;
     color:$c ;
     text-align: $ta;
+    text-decoration: $tc;
 }

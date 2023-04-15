@@ -10,9 +10,7 @@
         border-radius: 0.4rem;
         .logo{
             a{
-                text-decoration: none;
-                color: white;
-                font-size: 2rem;
+                @include text(2rem,none,#fff,none,none);
             }
         }
     }
@@ -25,9 +23,7 @@
         gap: 2rem;
         li{
             a{
-                text-decoration: none;
-                font-size: 2rem;
-                color: white;
+                @include text(2rem,none,#fff,none,none);
             }
         }
     }

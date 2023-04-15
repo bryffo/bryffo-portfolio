@@ -8,17 +8,12 @@ footer{
         @include display(flex,row,none,space-between
         ,none);
         .texto-footer{
-            @include display(flex,column,none,none
-            ,none);
+            @include display(flex,column,none,none,none);
             a{
-                text-decoration: none;
-                color: #fff;
-                font-size: 2rem;
-
+                @include text(2rem,none,#fff,none,none);
             }
             p{
-                color: #fff;
-                font-size: 1rem;
+                @include text(1rem,none,#fff,none,none);
             }
         }
     }

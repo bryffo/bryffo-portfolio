@@ -6,21 +6,17 @@
 button{
     border-radius: 2rem;
     border: 0.1rem solid black;
-    font-size: 1.5rem;
-    font-weight: bold;
     padding: 2rem;
 }
 
 .btn-blanco{
     a{
-        text-decoration: none;
-        color: black;
+        @include text(1.5rem,bold,black,none,none);
     }
 }
 .btn-azul{
     background-color: #150050;
     a{
-        text-decoration: none;
-        color: #fff;
+        @include text(1.5rem,bold,#fff,none,none);
     }
 }

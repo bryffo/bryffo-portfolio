@@ -3,27 +3,28 @@
         flex-direction: row;
     }
 
+
     .grid-pagina-1{
         h2{
-            @include text(4rem,bold,#fff,center);
+            @include text(4rem,bold,#fff,center,none);
         }
         p{
-            @include text(2.5rem,bold,#fff,start);
+            @include text(2.5rem,bold,#fff,start,none);
         }
     }
     
     .grid-pagina-2{
         h2{
-            @include text(4rem,bold,#fff,center);
+            @include text(4rem,bold,#fff,center,none);
         }
         p{
-            @include text(2.5rem,bold,#fff,start);
+            @include text(2.5rem,bold,#fff,start,none);
         }
     }
 
     .comentario{
         p{
-            @include text(2.5rem,bold,none,none);
+            @include text(2.5rem,bold,none,none,none);
         }
     }
 }
