@@ -1,82 +1,40 @@
 .paginas{
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    overflow: auto;
-}
-
-.paginas img{
-    width: 90%;
-    height: 90%;
+    height: 100vh;
+    @include display(flex,column,none,center,none);
 }
 
 .grid-pagina-1{
-    background-color: rgba(255, 255, 255, 0.15);
-    display: grid;
-    grid-template-columns: repeat(12, auto);
-    grid-template-rows: repeat(3, auto);
+    @include grid(repeat(12, auto),repeat(4, auto),none,none);
     padding: 2rem;
-}
-
-.grid-pagina-1 h2{
-    grid-column-start: 2;
-    grid-column-end: 4;
-    grid-row-start: 1;
-    grid-row-end: 2;
-}
-.grid-pagina-1 p{
-    grid-column-start: 2;
-    grid-column-end: 7;
-    grid-row-start: 2;
-    grid-row-end: 3;
-}
-.grid-pagina-1 img{
-    grid-column-start: 8;
-    grid-column-end: 12;
-    grid-row-start: 1;
-    grid-row-end: 4;
+    h2{
+        @include grid-order(1,1,2,13);
+        @include text(2rem,bold,#fff,center);
+    }
+    p{
+        @include grid-order(2,1,3,13);
+        @include text(1.5rem,bold,#fff,center);
+    }
+    img{
+        @include grid-order(3,1,5,13);
+        justify-self: center;
+        width: 25rem;
+    }
 }
 
 .grid-pagina-2{
-    background-color: rgba(191, 179, 179, 0.3);
-    display: grid;
-    grid-template-columns: repeat(12, auto);
-    grid-template-rows: repeat(3, auto);
+    @include grid(repeat(12, auto),repeat(4, auto),none,none);
     padding: 2rem;
-
-}
-
-.grid-pagina-2 h2{
-    grid-column-start: 7;
-    grid-column-end: 9;
-    grid-row-start: 1;
-    grid-row-end: 2;
-}
-.grid-pagina-2 p{
-    grid-column-start: 7;
-    grid-column-end: 12;
-    grid-row-start: 2;
-    grid-row-end: 3;
-}
-.grid-pagina-2 img{
-    grid-column-start: 2;
-    grid-column-end: 6;
-    grid-row-start: 1;
-    grid-row-end: 4;
-}
-.paginas img {
-    border: 0.2rem solid black;
-    justify-self: center;
-    align-self: center;
-}
-
-.paginas h2 {
-    font-size: 3rem;
-    font-family: 'Lato', sans-serif;
-    align-self: flex-end;
-}
-
-.paginas p {
-    font-weight:bold;
-    font-size: 2rem;
+    h2{
+        @include grid-order(1,1,2,12);
+        @include text(2rem,bold,#fff,center);
+    }
+    p{
+        @include grid-order(2,1,3,12);
+        @include text(1.5rem,bold,#fff,center);
+    }
+    img{
+        @include grid-order(3,1,5,12);
+        width: 25rem;
+        justify-self: center
+    }
 }

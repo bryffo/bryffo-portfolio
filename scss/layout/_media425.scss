@@ -60,6 +60,29 @@
         }
     }
 
+    .grid-pagina-1{
+        h2{
+            @include text(2.5rem,bold,#fff,center);
+        }
+        p{
+            @include text(2rem,bold,#fff,center);
+        }
+        img{
+            width: 35rem;
+        }
+    }
+    
+    .grid-pagina-2{
+        h2{
+            @include text(2.5rem,bold,#fff,center);
+        }
+        p{
+            @include text(2rem,bold,#fff,center);
+        }
+        img{
+            width: 35rem;
+        }
+    }
 
     footer{
         div{

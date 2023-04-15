@@ -2,4 +2,22 @@
     .section-index{
         flex-direction: row;
     }
+
+    .grid-pagina-1{
+        h2{
+            @include text(4rem,bold,#fff,center);
+        }
+        p{
+            @include text(2.5rem,bold,#fff,start);
+        }
+    }
+    
+    .grid-pagina-2{
+        h2{
+            @include text(4rem,bold,#fff,center);
+        }
+        p{
+            @include text(2.5rem,bold,#fff,start);
+        }
+    }
 }
