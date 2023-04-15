@@ -12,12 +12,12 @@ main{
     @include display(flex,column-reverse,none,center,none)
 }
 .index-div-1{
-    text-align: center;
     align-self: center;
     h1{
         span{
             color: #537FE7;
         }
+        text-align: center;
         color: white;
         font-size: 3rem;
         font-family: 'Lato', sans-serif;
@@ -27,6 +27,7 @@ main{
         font-size: 1.5rem;
         margin-bottom: 3rem;
         font-weight: bold;
+        text-align: center;
     }
 }
 

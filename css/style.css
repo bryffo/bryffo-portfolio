@@ -99,10 +99,10 @@ main {
 }
 
 .index-div-1 {
-  text-align: center;
   align-self: center;
 }
 .index-div-1 h1 {
+  text-align: center;
   color: white;
   font-size: 3rem;
   font-family: "Lato", sans-serif;
@@ -115,6 +115,7 @@ main {
   font-size: 1.5rem;
   margin-bottom: 3rem;
   font-weight: bold;
+  text-align: center;
 }
 
 .index-div-2 {
@@ -299,23 +300,25 @@ section .p-3 {
 .comentario {
   display: flex;
   flex-direction: column;
+  flex-wrap: none;
   justify-content: space-between;
+  align-items: none;
   background-color: #537FE7;
-  width: 50%;
-  height: 25rem;
+  width: 80%;
+  height: 20rem;
   padding: 0.5rem;
   margin: 3rem;
   border: 0.1rem solid black;
   box-shadow: 1rem 1rem 1rem grey;
 }
-
 .comentario img {
-  max-width: 10rem;
+  max-width: 7rem;
 }
-
 .comentario p {
-  font-size: 2rem;
+  font-size: 1.5rem;
   font-weight: bold;
+  color: none;
+  text-align: none;
 }
 
 .col-md-5 {
@@ -620,6 +623,12 @@ button {
     justify-self: center;
     align-self: center;
   }
+  .comentario p {
+    font-size: 2rem;
+    font-weight: bold;
+    color: none;
+    text-align: none;
+  }
   .redes-sociales li a img {
     width: 100%;
     height: 100%;
@@ -652,6 +661,12 @@ button {
     font-weight: bold;
     color: #fff;
     text-align: start;
+  }
+  .comentario p {
+    font-size: 2.5rem;
+    font-weight: bold;
+    color: none;
+    text-align: none;
   }
 }
 

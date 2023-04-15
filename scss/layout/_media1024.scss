@@ -20,4 +20,10 @@
             @include text(2.5rem,bold,#fff,start);
         }
     }
+
+    .comentario{
+        p{
+            @include text(2.5rem,bold,none,none);
+        }
+    }
 }

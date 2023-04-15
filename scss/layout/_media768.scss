@@ -93,6 +93,13 @@
         }
     }
 
+
+    .comentario{
+        p{
+            @include text(2rem,bold,none,none);
+        }
+    }
+
     .redes-sociales{
         li{
             a{
