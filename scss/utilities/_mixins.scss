@@ -1,0 +1,19 @@
+@mixin display($display,$direction,$wrap,$justify,$align){
+    display: $display;
+    flex-direction: $direction ;
+    flex-wrap: $wrap;
+    justify-content: $justify ;
+    align-items: $align ;
+}
+
+@mixin grid($cols,$rows,$justify,$align){
+    display: grid;
+    grid-template-columns: $cols;
+    grid-template-rows: $rows;
+    justify-content: $justify;
+    align-items: $align;
+}
+
+@mixin grid-order($rs,$cs,$re,$ce){
+    grid-area: $rs/$cs/$re/$ce;
+}

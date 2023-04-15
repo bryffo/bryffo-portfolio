@@ -1,0 +1,26 @@
+.container-btn{
+    @include display(flex,none,none,center,center);
+    gap: 3rem;
+
+}
+button{
+    border-radius: 2rem;
+    border: 0.1rem solid black;
+    font-size: 1.5rem;
+    font-weight: bold;
+    padding: 2rem;
+}
+
+.btn-blanco{
+    a{
+        text-decoration: none;
+        color: black;
+    }
+}
+.btn-azul{
+    background-color: #150050;
+    a{
+        text-decoration: none;
+        color: #fff;
+    }
+}
