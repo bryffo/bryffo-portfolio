@@ -24,6 +24,36 @@ main{
         @include text(1.5rem,bold,#fff,center,none);
         margin-bottom: 3rem;
     }
+    div{
+        @include display(flex,none,none,center,center);
+        gap: 3rem;
+        a{
+            border-radius: 2rem;
+            border: 0.1rem solid black;
+            padding: 2rem;
+            transition: all 0.3s ease-out;
+            &:nth-child(1){
+                background-color: #fff;
+                @include text(1.5rem,bold,black,none,none);
+            }
+            &:nth-child(2){
+                background-color: #150050;
+                @include text(1.5rem,bold,#fff,none,none);
+            }
+            &:nth-child(1):hover{
+                box-shadow: 0 0 0.5rem 0.5rem rgba(83, 127, 231, 0.5);
+                transform: scale(1.05);
+                border: 0.2rem solid black;
+
+            }
+            &:nth-child(2):hover{
+                box-shadow: 0 0 0.5rem 0.5rem rgba(83, 127, 231, 0.5);
+                transform: scale(1.05);
+                border: 0.2rem solid black;
+
+            }
+        }
+    }
 }
 
 .index-div-2{

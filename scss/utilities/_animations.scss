@@ -1,0 +1,17 @@
+@keyframes open-menu{
+    from{
+        max-height: 0;
+    }
+    to{
+        max-height: 50rem;
+    }
+}
+
+@keyframes boton-cambio{
+    from{
+        background-color: #fff;
+    }
+    to{
+        background-color: #150050;
+    }
+} 

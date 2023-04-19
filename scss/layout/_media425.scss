@@ -14,12 +14,16 @@
             p{
                 font-size: 2rem;
             }
-        }
-    }
-    .container-btn{
-        button{
-            a{
-            font-size: 2rem;
+            div{
+                a{
+                    &:nth-child(1){
+                        @include text(2rem,bold,black,none,none);
+                    }
+                    &:nth-child(2){
+                        @include text(2rem,bold,#fff,none,none);
+                    }
+
+                }
             }
         }
     }
