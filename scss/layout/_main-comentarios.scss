@@ -1,16 +1,28 @@
-.comentario{
-    @include display(flex,column,none,space-between,none);
-    background-color: #537FE7;
-    width: 80%;
-    height: 20rem;
-    padding: 0.5rem;
-    margin: 3rem;
-    border: 0.1rem solid black;
-    box-shadow: 1rem 1rem 1rem grey;
-    img{
-        max-width: 7rem;
+.titulo{
+    padding: 2rem;
+    h1{
+        @include text(3rem,bold,#fff,center,none)
     }
     p{
-        @include text(1.5rem,bold,none,none,none);
+        @include text(1.5rem,bold,#fff,center,uppercase)
+    }
+}
+
+
+
+.comentario{
+    @include display(flex,column,none,space-between,none);
+    width: 75%;
+    height: 45rem;
+    padding: 0.5rem;
+    margin: 3rem;
+    gap: 2rem;
+    img{
+        align-self: center;
+        max-width: 10rem;
+    }
+    p{
+        align-self: center;
+        @include text(1.5rem,bold,none,center,none);
     }
 }

@@ -384,28 +384,46 @@ main {
   justify-self: center;
 }
 
+.titulo {
+  padding: 2rem;
+}
+.titulo h1 {
+  font-size: 3rem;
+  font-weight: bold;
+  color: #fff;
+  text-align: center;
+  text-decoration: none;
+}
+.titulo p {
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: #fff;
+  text-align: center;
+  text-decoration: uppercase;
+}
+
 .comentario {
   display: flex;
   flex-direction: column;
   flex-wrap: none;
   justify-content: space-between;
   align-items: none;
-  background-color: #537FE7;
-  width: 80%;
-  height: 20rem;
+  width: 75%;
+  height: 45rem;
   padding: 0.5rem;
   margin: 3rem;
-  border: 0.1rem solid black;
-  box-shadow: 1rem 1rem 1rem grey;
+  gap: 2rem;
 }
 .comentario img {
-  max-width: 7rem;
+  align-self: center;
+  max-width: 10rem;
 }
 .comentario p {
+  align-self: center;
   font-size: 1.5rem;
   font-weight: bold;
   color: none;
-  text-align: none;
+  text-align: center;
   text-decoration: none;
 }
 
@@ -574,6 +592,9 @@ footer div .texto-footer p {
   .grid-pagina-2 img {
     width: 30rem;
   }
+  .comentario img {
+    max-width: 15rem;
+  }
   footer div .texto-footer a {
     font-size: 2.5rem;
     font-weight: none;
@@ -712,6 +733,13 @@ footer div .texto-footer p {
     width: 100%;
     justify-self: center;
     align-self: center;
+  }
+  .titulo p {
+    font-size: 2rem;
+    font-weight: bold;
+    color: #fff;
+    text-align: center;
+    text-decoration: uppercase;
   }
   .comentario p {
     font-size: 2rem;
