@@ -1,28 +1,32 @@
-.titulo{
+.titulo {
     padding: 2rem;
-    h1{
-        @include text(3rem,bold,#fff,center,none)
+
+    h1 {
+        @include text(3rem, bold, #fff, center, none);
     }
-    p{
-        @include text(1.5rem,bold,#fff,center,uppercase)
+
+    p {
+        @include text(1.5rem, bold, #fff, center, uppercase);
     }
 }
 
 
 
-.comentario{
-    @include display(flex,column,none,space-between,none);
+.comentario {
+    @include display(flex, column, none, space-between, none);
     width: 75%;
     height: 45rem;
     padding: 0.5rem;
     margin: 3rem;
     gap: 2rem;
-    img{
+
+    img {
         align-self: center;
         max-width: 10rem;
     }
-    p{
+
+    p {
         align-self: center;
-        @include text(1.5rem,bold,none,center,none);
+        @include text(1.5rem, bold, none, center, none);
     }
 }

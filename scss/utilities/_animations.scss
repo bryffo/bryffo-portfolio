@@ -1,17 +1,19 @@
-@keyframes open-menu{
-    from{
+@keyframes open-menu {
+    from {
         max-height: 0;
     }
-    to{
+
+    to {
         max-height: 50rem;
     }
 }
 
-@keyframes boton-cambio{
-    from{
+@keyframes boton-cambio {
+    from {
         background-color: #fff;
     }
-    to{
+
+    to {
         background-color: #150050;
     }
-} 
+}

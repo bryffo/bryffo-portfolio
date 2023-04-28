@@ -1,26 +1,28 @@
-@media (min-width:425px){
-    .nav-wrapper{
-        nav{
-            .logo{
-                a{
+@media (min-width:425px) {
+    .nav-wrapper {
+        nav {
+            .logo {
+                a {
                     font-size: 3rem;
                 }
             }
         }
     }
 
-    .section-index{
-        .index-div-1{
-            p{
+    .section-index {
+        .index-div-1 {
+            p {
                 font-size: 2rem;
             }
-            div{
-                a{
-                    &:nth-child(1){
-                        @include text(2rem,bold,black,none,none);
+
+            div {
+                a {
+                    &:nth-child(1) {
+                        @include text(2rem, bold, black, none, none);
                     }
-                    &:nth-child(2){
-                        @include text(2rem,bold,#fff,none,none);
+
+                    &:nth-child(2) {
+                        @include text(2rem, bold, #fff, none, none);
                     }
 
                 }
@@ -28,77 +30,87 @@
         }
     }
 
-    .informacion{
-        h1{
-            @include text(4rem,bold,#fff,start,none);
-            @include grid-order(2,2,3,12);
+    .informacion {
+        h1 {
+            @include text(4rem, bold, #fff, start, none);
+            @include grid-order(2, 2, 3, 12);
         }
-        .p-1{
-            @include text(2.5rem,bold,#fff,start,none);
-            @include grid-order(3,2,4,12);
+
+        .p-1 {
+            @include text(2.5rem, bold, #fff, start, none);
+            @include grid-order(3, 2, 4, 12);
         }
-        .p-2{
-            @include text(2.5rem,bold,#fff,start,none);
-            @include grid-order(4,2,5,12);
+
+        .p-2 {
+            @include text(2.5rem, bold, #fff, start, none);
+            @include grid-order(4, 2, 5, 12);
 
         }
-        .p-3{
-            @include text(2.5rem,bold,#fff,start,none);
-            @include grid-order(6,2,7,12);
+
+        .p-3 {
+            @include text(2.5rem, bold, #fff, start, none);
+            @include grid-order(6, 2, 7, 12);
             justify-self: start;
 
         }
     }
 
-    .redes-sociales-sm{
+    .redes-sociales-sm {
         align-self: flex-end;
         justify-self: start;
-        @include grid-order(7,2,9,12);
-        a{
-            img{
+        @include grid-order(7, 2, 9, 12);
+
+        a {
+            img {
                 width: 5rem;
                 height: 5rem;
             }
         }
     }
 
-    .grid-pagina-1{
-        h2{
-            @include text(2.5rem,bold,#fff,center,none);
+    .grid-pagina-1 {
+        h2 {
+            @include text(2.5rem, bold, #fff, center, none);
         }
-        p{
-            @include text(2rem,bold,#fff,center,none);
+
+        p {
+            @include text(2rem, bold, #fff, center, none);
         }
-        img{
-            width: 30rem;
-        }
-    }
-    
-    .grid-pagina-2{
-        h2{
-            @include text(2.5rem,bold,#fff,center,none);
-        }
-        p{
-            @include text(2rem,bold,#fff,center,none);
-        }
-        img{
+
+        img {
             width: 30rem;
         }
     }
 
-    .comentario{
-        img{
+    .grid-pagina-2 {
+        h2 {
+            @include text(2.5rem, bold, #fff, center, none);
+        }
+
+        p {
+            @include text(2rem, bold, #fff, center, none);
+        }
+
+        img {
+            width: 30rem;
+        }
+    }
+
+    .comentario {
+        img {
             max-width: 15rem;
         }
     }
-    footer{
-        div{
-            .texto-footer{
-                a{
-                    @include text(2.5rem,none,#fff,none,none);
+
+    footer {
+        div {
+            .texto-footer {
+                a {
+                    @include text(2.5rem, none, #fff, none, none);
                 }
-                p{
-                    @include text(1.5rem,none,#fff,none,none);
+
+                p {
+                    @include text(1.5rem, none, #fff, none, none);
                 }
             }
         }

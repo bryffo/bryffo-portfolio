@@ -1,115 +1,124 @@
-@media (min-width:768px){
-    .section-index{
-        .index-div-1{
-            h1{
-                @include text(5rem,none,#fff,center,none);
+@media (min-width:768px) {
+    .section-index {
+        .index-div-1 {
+            h1 {
+                @include text(5rem, none, #fff, center, none);
             }
-            p{
-                @include text(2.5rem,none,#fff,center,none);
+
+            p {
+                @include text(2.5rem, none, #fff, center, none);
             }
         }
     }
 
 
-    .informacion{
-        h1{
-            @include grid-order(2,2,3,8);
+    .informacion {
+        h1 {
+            @include grid-order(2, 2, 3, 8);
         }
-        .p-1{
-            @include grid-order(3,2,5,8);
+
+        .p-1 {
+            @include grid-order(3, 2, 5, 8);
         }
-        .p-2{
-            @include grid-order(6,2,8,8);
+
+        .p-2 {
+            @include grid-order(6, 2, 8, 8);
         }
-        .p-3{
-            @include grid-order(8,2,9,8);
+
+        .p-3 {
+            @include grid-order(8, 2, 9, 8);
         }
     }
 
-    .redes-sociales-sm{
-        @include grid-order(9,2,11,7);
+    .redes-sociales-sm {
+        @include grid-order(9, 2, 11, 7);
         align-self: center;
-        a{
-            img{
+
+        a {
+            img {
                 width: 7rem;
                 height: 7rem;
             }
         }
     }
 
-    .img-sm{
-        display:grid;
-        @include grid-order(3,8,8,12);
+    .img-sm {
+        display: grid;
+        @include grid-order(3, 8, 8, 12);
     }
 
-    .grid-pagina-1{
-        h2{
-            @include grid-order(2,1,3,7);
-            @include text(3.5rem,bold,#fff,center,none);
+    .grid-pagina-1 {
+        h2 {
+            @include grid-order(2, 1, 3, 7);
+            @include text(3.5rem, bold, #fff, center, none);
             justify-self: center;
             align-self: flex-end
         }
-        p{
-            @include grid-order(3,1,4,7);
-            @include text(2rem,bold,#fff,start,none);
+
+        p {
+            @include grid-order(3, 1, 4, 7);
+            @include text(2rem, bold, #fff, start, none);
             margin-right: 1rem;
 
         }
-        img{
-            @include grid-order(2,8,4,13);
+
+        img {
+            @include grid-order(2, 8, 4, 13);
             justify-self: center;
             align-self: center;
             width: 100%;
         }
     }
-    
-    .grid-pagina-2{
-        h2{
-            @include grid-order(2,7,3,13);
-            @include text(3.5rem,bold,#fff,center,none);
-            align-self: flex-end
 
+    .grid-pagina-2 {
+        h2 {
+            @include grid-order(2, 7, 3, 13);
+            @include text(3.5rem, bold, #fff, center, none);
+            align-self: flex-end
         }
-        p{
-            @include grid-order(3,7,4,13);
-            @include text(2rem,bold,#fff,start,none);
+
+        p {
+            @include grid-order(3, 7, 4, 13);
+            @include text(2rem, bold, #fff, start, none);
             margin-left: 1rem;
         }
-        img{
-            @include grid-order(2,1,4,7);
+
+        img {
+            @include grid-order(2, 1, 4, 7);
             width: 100%;
             justify-self: center;
             align-self: center;
         }
     }
 
-    .titulo{
-        p{
-            @include text(2rem,bold,#fff,center,uppercase)
+    .titulo {
+        p {
+            @include text(2rem, bold, #fff, center, uppercase)
         }
     }
 
-    .comentario{
-        p{
-            @include text(2rem,bold,none,none,none);
+    .comentario {
+        p {
+            @include text(2rem, bold, none, none, none);
         }
     }
 
-    .row{
-        .col-md-5{
+    .row {
+        .col-md-5 {
             margin-top: 0;
         }
-        .col-md-6{
+
+        .col-md-6 {
             margin-top: 0;
             margin-bottom: 0;
             margin-left: 2rem;
         }
     }
 
-    .redes-sociales{
-        li{
-            a{
-                img{
+    .redes-sociales {
+        li {
+            a {
+                img {
                     width: 100%;
                     height: 100%;
                 }

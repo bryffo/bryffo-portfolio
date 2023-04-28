@@ -75,7 +75,7 @@ html {
   color: #fff;
   text-align: none;
   text-decoration: none;
-  --clippy:polygon(0 0, 0 0, 0 100%, 0 100%);
+  --clippy: polygon(0 0, 0 0, 0 100%, 0 100%);
 }
 .menu ul li a:after {
   content: "";
@@ -89,10 +89,11 @@ html {
 }
 .menu ul li a:hover {
   color: #007bff;
-  --clippy:polygon(0 0, 100% 0, 100% 100%, 0 100%);
+  --clippy: polygon(0 0, 100% 0, 100% 100%, 0 100%);
 }
 
-nav #toggle, nav label {
+nav #toggle,
+nav label {
   display: none;
 }
 

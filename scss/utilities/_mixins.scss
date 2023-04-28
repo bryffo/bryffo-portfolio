@@ -1,4 +1,4 @@
-@mixin display($display,$direction,$wrap,$justify,$align){
+@mixin display($display, $direction, $wrap, $justify, $align) {
     display: $display;
     flex-direction: $direction ;
     flex-wrap: $wrap;
@@ -6,7 +6,7 @@
     align-items: $align ;
 }
 
-@mixin grid($cols,$rows,$justify,$align){
+@mixin grid($cols, $rows, $justify, $align) {
     display: grid;
     grid-template-columns: $cols;
     grid-template-rows: $rows;
@@ -14,17 +14,17 @@
     align-items: $align;
 }
 
-@mixin grid-order($rs,$cs,$re,$ce){
+@mixin grid-order($rs, $cs, $re, $ce) {
     grid-row-start: $rs;
     grid-column-start: $cs;
     grid-row-end: $re;
     grid-column-end: $ce;
 }
 
-@mixin text($fs,$fw,$c,$ta,$tc){
-    font-size:$fs ;
-    font-weight:$fw ;
-    color:$c ;
+@mixin text($fs, $fw, $c, $ta, $tc) {
+    font-size: $fs ;
+    font-weight: $fw ;
+    color: $c ;
     text-align: $ta;
     text-decoration: $tc;
 }

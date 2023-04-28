@@ -1,4 +1,4 @@
-main{
+main {
     grid-area: main;
     background-image: url("../assets/imgs/background.jpg.jpg");
     background-position: center;
@@ -7,59 +7,69 @@ main{
 
 }
 
-.section-index{
+.section-index {
     height: 100%;
-    @include display(flex,column-reverse,none,center,none)
+    @include display(flex, column-reverse, none, center, none);
 }
-.index-div-1{
+
+.index-div-1 {
     align-self: center;
-    h1{
-        span{
+
+    h1 {
+        span {
             color: #537FE7;
         }
-        @include text(3rem,none,#fff,center,none);
-        font-family: 'Lato', sans-serif;
+
+        @include text(3rem, none, #fff, center, none);
+        font-family: 'Lato',
+        sans-serif;
     }
-    p{
-        @include text(1.5rem,bold,#fff,center,none);
+
+    p {
+        @include text(1.5rem, bold, #fff, center, none);
         margin-bottom: 3rem;
     }
-    div{
-        @include display(flex,none,none,center,center);
+
+    div {
+        @include display(flex, none, none, center, center);
         gap: 3rem;
-        a{
+
+        a {
             border-radius: 2rem;
             border: 0.1rem solid black;
             padding: 2rem;
             transition: all 0.3s ease-out;
-            &:nth-child(1){
+
+            &:nth-child(1) {
                 background-color: #fff;
-                @include text(1.5rem,bold,black,none,none);
+                @include text(1.5rem, bold, black, none, none);
             }
-            &:nth-child(2){
+
+            &:nth-child(2) {
                 background-color: #150050;
-                @include text(1.5rem,bold,#fff,none,none);
+                @include text(1.5rem, bold, #fff, none, none);
             }
-            &:nth-child(1):hover{
+
+            &:nth-child(1):hover {
                 box-shadow: 0 0 0.5rem 0.5rem rgba(83, 127, 231, 0.5);
                 transform: scale(1.05);
                 border: 0.2rem solid black;
-
             }
-            &:nth-child(2):hover{
+
+            &:nth-child(2):hover {
                 box-shadow: 0 0 0.5rem 0.5rem rgba(83, 127, 231, 0.5);
                 transform: scale(1.05);
                 border: 0.2rem solid black;
-
             }
         }
     }
 }
 
-.index-div-2{
+.index-div-2 {
     align-self: center;
-    padding: 5rem; 
-    img{
+    padding: 5rem;
+
+    img {
         width: 100%;
         height: 100%;
     }
